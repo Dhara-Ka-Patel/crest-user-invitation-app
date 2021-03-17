@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    // "module": "es6",
+    "target": "es2015",
+    "jsx": "react",
+    "allowJs": true,
+    "experimentalDecorators": true,
+    "lib": ["es2016", "dom", "esnext.asynciterable"],
+    "plugins": [
+      {
+        "transform": "typescript-plugin-styled-components",
+        "type": "config",
+
+        // other typescript-plugin-styled-components options can be added here
+        "minify": true,
+        "ssr": true
+      },
+      {
+        "name": "typescript-tslint-plugin"
+      }
+    ],
+    "baseUrl": "./",
+    "paths": {
+      "@theme/*": ["src/App/Theme/*"],
+      "@shared/*": ["src/App/Shared/*"],
+      "@modules/*": ["src/App/Modules/*"],
+      "@libs/*": ["src/App/Libs/*"],
+      "@styled/*": ["src/App/StyledComponents/*"],
+      "@hoc/*": ["src/App/HOCs/*"],
+      "@ifaces/*": ["src/App/Interfaces/*"],
+      "@models/*": ["src/App/Models/*"],
+      "@configs/*": ["src/App/Configs/*"],
+      "@api/*": ["src/App/APIServices/*"],
+      "@public/*": ["src/public/*"],
+      "@store/*": ["src/App/Store/*"]
+    }
+  },
+  "typedocOptions": {
+    "mode": "modules",
+    "out": "docs"
+  }
+}

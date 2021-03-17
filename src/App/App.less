@@ -1,0 +1,121 @@
+body,
+* {
+  font-family: Muli;
+  font-style: normal;
+}
+// .wrapper {
+//   display: flex;
+//   flex-direction: column;
+// }
+
+// .wrapper-inner {
+//   background-color: green;
+//   flex:2;
+//   display: flex;
+// }
+
+// Toastify style customise
+.Toastify__toast-container {
+  width: 320px;
+}
+.Toastify__toast--default {
+  background: #fff;
+  color: #aaa;
+}
+.Toastify__toast--info {
+  background: #2185d0;
+  // background: #0984e3;
+}
+.Toastify__toast--success {
+  background: #007e7e;
+  // background: #00b894;
+}
+.Toastify__toast--warning {
+  background: #f2711c;
+  // background: #fdcb6e;
+}
+.Toastify__toast--error {
+  // background: #d63031;
+  background: #db2828;
+}
+
+.Toastify__toast-body {
+  margin-left: 15px;
+  font-family: Muli;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.small-notification-container {
+  border-radius: 8px !important;
+}
+
+//side bar
+/* The animation code */
+@keyframes example {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* The element to apply the animation to */
+.animatedMenu {
+  animation-name: example;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  overflow: hidden;
+  opacity: 0;
+}
+
+/* For generic Modal in shared component*/
+.general-modal {
+  width: 590px !important;
+  border-radius: 4px;
+
+  .content {
+    padding: 0px !important;
+  }
+}
+
+.basic-styled-input {
+  input {
+    box-sizing: border-box;
+    border-radius: 3px !important;
+
+    font-family: Muli;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #2d373c !important;
+    background: #ffffff !important;
+    margin-bottom: 15px;
+  }
+}
+
+.basic-styled-dropdown {
+  height: 43px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+
+  font-family: Muli;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #2d373c;
+
+  width: 100%;
+
+  i {
+    position: absolute !important;
+    right: 3px !important;
+  }
+}

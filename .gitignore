@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.idea/
+.notes
+
+_webRXLoginForm.tsx
+yarn-error.log

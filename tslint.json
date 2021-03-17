@@ -1,0 +1,22 @@
+{
+  "extends": [
+    "tslint:latest",
+    "tslint-react",
+    "tslint-config-airbnb",
+    "tslint-plugin-prettier",
+    "tslint-config-prettier"
+  ],
+  "rules": {
+    "jsx-wrap-multiline": false,
+    "variable-name": [true, "ban-keywords", "allow-pascal-case"],
+    "no-reference-import": false,
+    "no-angle-bracket-type-assertion": false,
+    "jsx-no-multiline-js": false,
+    "ordered-imports": false,
+    "no-submodule-imports": false,
+    "no-implicit-dependencies": false,
+    "trailing-comma": false,
+    "import-name": false,
+    "object-literal-sort-keys": false
+  }
+}
